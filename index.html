@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AquaCheck | Water Contamination Risk Alert</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-droplet"></i>
+            <span>AquaCheck</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#check-water">Check Water</a>
+            <a href="#about">About</a>
+        </div>
+
+    </nav>
+
+
+    <!-- ================= STARTING PAGE ================= -->
+
+    <section id="home" class="landing-page">
+
+        <div class="landing-content">
+
+            <div class="landing-badge">
+                <i class="fa-solid fa-shield-water"></i>
+                AI-Based Water Risk Screening
+            </div>
+
+            <h1>
+                Understand Your
+                <span>Water Risk</span>
+            </h1>
+
+            <p class="landing-description">
+                AquaCheck combines water observations and reported symptoms
+                to identify a possible water contamination risk using
+                simple and explainable rules.
+            </p>
+
+            <div class="landing-buttons">
+
+                <button class="primary-btn" onclick="scrollToChecker()">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Start Checking
+                </button>
+
+                <button class="secondary-btn" onclick="scrollToHowItWorks()">
+                    <i class="fa-solid fa-circle-info"></i>
+                    How It Works
+                </button>
+
+            </div>
+
+
+            <div class="landing-note">
+
+                <i class="fa-solid fa-circle-exclamation"></i>
+
+                <span>
+                    AquaCheck is a screening and awareness tool.
+                    It does not replace laboratory water testing
+                    or medical diagnosis.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- Water Visual -->
+
+        <div class="landing-visual">
+
+            <div class="water-orb">
+
+                <div class="orb-inner">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+
+            </div>
+
+            <div class="floating-card water-card">
+
+                <i class="fa-solid fa-water"></i>
+
+                <div>
+                    <strong>Water Evidence</strong>
+                    <small>Source • Appearance • Smell</small>
+                </div>
+
+            </div>
+
+
+            <div class="floating-card symptom-card">
+
+                <i class="fa-solid fa-user-check"></i>
+
+                <div>
+                    <strong>Reported Symptoms</strong>
+                    <small>Symptoms • Timing • Severity</small>
+                </div>
+
+            </div>
+
+
+            <div class="floating-card alert-card">
+
+                <i class="fa-solid fa-triangle-exclamation"></i>
+
+                <div>
+                    <strong>Risk Alert</strong>
+                    <small>Explainable Result</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= QUICK STATS ================= -->
+
+    <section class="stats-section">
+
+        <div class="stat-card">
+            <i class="fa-solid fa-water"></i>
+            <h3>Water Clues</h3>
+            <p>Source, appearance, smell & taste</p>
+        </div>
+
+        <div class="stat-card">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <h3>Symptoms</h3>
+            <p>Reported health-related observations</p>
+        </div>
+
+        <div class="stat-card">
+            <i class="fa-solid fa-brain"></i>
+            <h3>Reasoning</h3>
+            <p>Transparent rule-based analysis</p>
+        </div>
+
+        <div class="stat-card">
+            <i class="fa-solid fa-bell"></i>
+            <h3>Risk Alert</h3>
+            <p>Low, moderate or high risk signal</p>
+        </div>
+
+    </section>
+
+
+    <!-- ================= HOW IT WORKS ================= -->
+
+    <section id="how-it-works" class="section">
+
+        <div class="section-heading">
+
+            <span class="section-tag">
+                HOW IT WORKS
+            </span>
+
+            <h2>
+                From Water Clues to
+                <span>Risk Alert</span>
+            </h2>
+
+            <p>
+                AquaCheck connects water observations and reported symptoms
+                through a simple reasoning process.
+            </p>
+
+        </div>
+
+
+        <div class="process-container">
+
+            <div class="process-card">
+
+                <div class="process-number">01</div>
+
+                <i class="fa-solid fa-faucet"></i>
+
+                <h3>Water Information</h3>
+
+                <p>
+                    Enter the water source, appearance, smell,
+                    taste and other visible observations.
+                </p>
+
+            </div>
+
+
+            <div class="process-arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+
+            <div class="process-card">
+
+                <div class="process-number">02</div>
+
+                <i class="fa-solid fa-user-doctor"></i>
+
+                <h3>Symptoms</h3>
+
+                <p>
+                    Report symptoms, their timing and
+                    severity based on your observations.
+                </p>
+
+            </div>
+
+
+            <div class="process-arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+
+            <div class="process-card">
+
+                <div class="process-number">03</div>
+
+                <i class="fa-solid fa-brain"></i>
+
+                <h3>Joint Reasoning</h3>
+
+                <p>
+                    Predefined rules combine both evidence
+                    streams to identify a risk signal.
+                </p>
+
+            </div>
+
+
+            <div class="process-arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+
+            <div class="process-card">
+
+                <div class="process-number">04</div>
+
+                <i class="fa-solid fa-triangle-exclamation"></i>
+
+                <h3>Risk Alert</h3>
+
+                <p>
+                    Receive a possible contamination risk level
+                    with understandable reasons.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CHECK WATER ================= -->
+
+    <section id="check-water" class="checker-section">
+
+        <div class="section-heading">
+
+            <span class="section-tag">
+                AQUACHECK SCREENING
+            </span>
+
+            <h2>
+                Check Your
+                <span>Water Risk</span>
+            </h2>
+
+            <p>
+                Enter the available water observations and reported symptoms.
+            </p>
+
+        </div>
+
+
+        <div class="checker-grid">
+
+
+            <!-- WATER INFORMATION -->
+
+            <div class="input-card">
+
+                <div class="card-heading">
+
+                    <div class="card-icon water-icon">
+                        <i class="fa-solid fa-water"></i>
+                    </div>
+
+                    <div>
+                        <h3>Water Information</h3>
+                        <p>Tell us what you observe about the water.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Water Source
+                    </label>
+
+                    <select id="waterSource">
+
+                        <option value="">
+                            Select water source
+                        </option>
+
+                        <option value="tap">
+                            Tap Water
+                        </option>
+
+                        <option value="well">
+                            Well Water
+                        </option>
+
+                        <option value="river">
+                            River / Lake
+                        </option>
+
+                        <option value="tank">
+                            Storage Tank
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        <i class="fa-solid fa-eye"></i>
+                        Appearance
+                    </label>
+
+                    <select id="appearance">
+
+                        <option value="">
+                            Select appearance
+                        </option>
+
+                        <option value="clear">
+                            Clear
+                        </option>
+
+                        <option value="cloudy">
+                            Cloudy
+                        </option>
+
+                        <option value="discolored">
+                            Discolored
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        <i class="fa-solid fa-wind"></i>
+                        Smell
+                    </label>
+
+                    <select id="smell">
+
+                        <option value="">
+                            Select smell
+                        </option>
+
+                        <option value="normal">
+                            Normal / No unusual smell
+                        </option>
+
+                        <option value="unusual">
+                            Unusual smell
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        <i class="fa-solid fa-glass-water"></i>
+                        Taste
+                    </label>
+
+                    <select id="taste">
+
+                        <option value="">
+                            Select taste
+                        </option>
+
+                        <option value="normal">
+                            Normal
+                        </option>
+
+                        <option value="unusual">
+                            Unusual taste
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        <i class="fa-solid fa-note-sticky"></i>
+                        Other Observations
+                    </label>
+
+                    <textarea
+                        id="observations"
+                        placeholder="Enter any other visible or noticeable water changes..."
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+
+            <!-- SYMPTOMS -->
+
+            <div class="input-card">
+
+                <div class="card-heading">
+
+                    <div class="card-icon symptom-icon">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+
+                    <div>
+                        <h3>Reported Symptoms</h3>
+                        <p>Select any symptoms that are being observed.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="symptom-list">
+
+                    <label class="symptom-option">
+
+                        <input
+                            type="checkbox"
+                            name="symptoms"
+                            value="diarrhea"
+                        >
+
+                        <span class="custom-checkbox">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-person-running"></i>
+                            Diarrhea
+                        </span>
+
+                    </label>
+
+
+                    <label class="symptom-option">
+
+                        <input
+                            type="checkbox"
+                            name="symptoms"
+                            value="vomiting"
+                        >
+
+                        <span class="custom-checkbox">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-face-dizzy"></i>
+                            Vomiting
+                        </span>
+
+                    </label>
+
+
+                    <label class="symptom-option">
+
+                        <input
+                            type="checkbox"
+                            name="symptoms"
+                            value="skin"
+                        >
+
+                        <span class="custom-checkbox">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-hand"></i>
+                            Skin Irritation
+                        </span>
+
+                    </label>
+
+
+                    <label class="symptom-option">
+
+                        <input
+                            type="checkbox"
+                            name="symptoms"
+                            value="other"
+                        >
+
+                        <span class="custom-checkbox">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-ellipsis"></i>
+                            Other Symptoms
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        <i class="fa-solid fa-clock"></i>
+                        When did symptoms appear?
+                    </label>
+
+                    <select id="timing">
+
+                        <option value="">
+                            Select timing
+                        </option>
+
+                        <option value="today">
+                            Today
+                        </option>
+
+                        <option value="recent">
+                            Recently
+                        </option>
+
+                        <option value="longer">
+                            More than a few days ago
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        <i class="fa-solid fa-gauge-high"></i>
+                        Severity
+                    </label>
+
+                    <select id="severity">
+
+                        <option value="">
+                            Select severity
+                        </option>
+
+                        <option value="mild">
+                            Mild
+                        </option>
+
+                        <option value="moderate">
+                            Moderate
+                        </option>
+
+                        <option value="severe">
+                            Severe
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="symptom-note">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    <p>
+                        Symptoms are treated as reported observations.
+                        AquaCheck does not diagnose a medical condition.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ANALYZE BUTTON -->
+
+        <div class="analyze-container">
+
+            <button
+                id="analyzeBtn"
+                class="analyze-btn"
+                onclick="analyzeRisk()"
+            >
+
+                <i class="fa-solid fa-brain"></i>
+
+                Analyze Water Risk
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- ================= LOADING ================= -->
+
+        <div
+            id="analysisLoading"
+            class="analysis-loading hidden"
+        >
+
+            <div class="loader-circle"></div>
+
+            <h3>
+                AquaCheck is analyzing the information...
+            </h3>
+
+            <p>
+                Combining water evidence and reported symptoms
+                using predefined reasoning rules.
+            </p>
+
+        </div>
+
+
+        <!-- ================= RESULT ================= -->
+
+        <div
+            id="resultSection"
+            class="result-section hidden"
+        >
+
+            <div class="result-header">
+
+                <span class="section-tag">
+                    ANALYSIS COMPLETE
+                </span>
+
+                <h2>
+                    AquaCheck
+                    <span>Risk Assessment</span>
+                </h2>
+
+                <p>
+                    The result below is based only on the information entered.
+                </p>
+
+            </div>
+
+
+            <div class="result-main-card">
+
+                <div class="risk-circle">
+
+                    <div id="riskIcon">
+                        <i class="fa-solid fa-shield"></i>
+                    </div>
+
+                    <span id="riskLevel">
+                        LOW
+                    </span>
+
+                </div>
+
+
+                <div class="risk-summary">
+
+                    <h2 id="riskTitle">
+                        No Strong Risk Indicators
+                    </h2>
+
+                    <p id="riskDescription">
+                        No strong contamination indicators were identified
+                        from the information provided.
+                    </p>
+
+
+                    <!-- WHY FLAGGED -->
+
+                    <div class="reasoning-box">
+
+                        <h3>
+                            <i class="fa-solid fa-brain"></i>
+                            Why AquaCheck Flagged This
+                        </h3>
+
+                        <div class="reasoning-flow">
+
+                            <span>
+                                <i class="fa-solid fa-water"></i>
+                                Water Evidence
+                            </span>
+
+                            <i class="fa-solid fa-plus"></i>
+
+                            <span>
+                                <i class="fa-solid fa-user-check"></i>
+                                Symptom Evidence
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                            <span>
+                                <i class="fa-solid fa-brain"></i>
+                                Joint Reasoning
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                            <span>
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+                                Risk Signal
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RESULT DETAILS -->
+
+            <div class="result-grid">
+
+
+                <!-- REASONS -->
+
+                <div class="result-card">
+
+                    <div class="result-card-title">
+
+                        <i class="fa-solid fa-list-check"></i>
+
+                        <h3>Contributing Factors</h3>
+
+                    </div>
+
+                    <ul id="reasonList"></ul>
+
+                </div>
+
+
+                <!-- WHAT IT MAY INDICATE -->
+
+                <div class="result-card">
+
+                    <div class="result-card-title">
+
+                        <i class="fa-solid fa-circle-question"></i>
+
+                        <h3>What This May Indicate</h3>
+
+                    </div>
+
+                    <p id="indicationText">
+
+                        The entered observations may be associated
+                        with a possible water-quality issue.
+
+                    </p>
+
+                </div>
+
+
+                <!-- GUIDANCE -->
+
+                <div class="result-card guidance-card">
+
+                    <div class="result-card-title">
+
+                        <i class="fa-solid fa-compass"></i>
+
+                        <h3>Recommended Next Step</h3>
+
+                    </div>
+
+                    <div id="guidanceContent"></div>
+
+                </div>
+
+            </div>
+
+
+            <div class="result-disclaimer">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <strong>Important:</strong>
+
+                AquaCheck provides a possible risk signal based on
+                entered observations. It cannot identify a specific
+                contaminant and cannot confirm that contamination is present.
+                Appropriate water-quality testing is required for confirmation.
+
+            </div>
+
+
+            <button
+                class="reset-btn"
+                onclick="resetAnalysis()"
+            >
+
+                <i class="fa-solid fa-rotate-left"></i>
+
+                Check Again
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="section about-section">
+
+        <div class="section-heading">
+
+            <span class="section-tag">
+                ABOUT AQUACHECK
+            </span>
+
+            <h2>
+                Simple.
+                <span>Explainable.</span>
+                Useful.
+            </h2>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p>
+                AquaCheck is a prototype AI reasoning system designed
+                to connect water-related observations with reported
+                symptoms and generate an understandable contamination
+                risk alert.
+            </p>
+
+            <p>
+                Instead of treating water evidence and health observations
+                separately, AquaCheck combines both evidence streams
+                through predefined rules.
+            </p>
+
+            <p>
+                The purpose is to provide a quick first alert and
+                encourage appropriate water-quality testing when
+                concerning patterns are identified.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            <i class="fa-solid fa-droplet"></i>
+
+            AquaCheck
+
+        </div>
+
+        <p>
+            AI-Based Water Contamination Risk Alert System
+        </p>
+
+        <p class="footer-small">
+            Academic Prototype • Not a Medical Diagnosis
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
